@@ -25,10 +25,12 @@
         <label for="">Contraseña</label>
       </div>
       <a href="" data-bs-toggle="modal" data-bs-target="#recuperar">Olvide mi contraseña</a>
-      <button type="submit" name="iniciar" class="sign-in">Siguiente</button>
+      <button type="submit" class="sign-in">Siguiente</button>
       <a href="signup.php">No tengo una cuenta</a>
     </div>
   </form>
+
+  <!--Recuperar Contraseña-->
   <div class="modal fade" id="recuperar" tabindex="-1" aria-labelledby="recuperar" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">

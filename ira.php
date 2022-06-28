@@ -6,10 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="icon" href="CSS/IMG/logo-health_up.png">
-    <link rel="stylesheet" href="CSS/usuario.css">
     <link rel="stylesheet" href="CSS/sidebar.css">
-    <title>Perfil | Health_up</title>
+    <link rel="stylesheet" href="CSS/ira.css">
+    <title>Manejo de ira Health_up</title>
 </head>
 
 <body>
@@ -19,7 +22,7 @@
                 <span class="img">
                     <img src="CSS/IMG/logo-health_up.png" alt="logo-Health_up">
                 </span>
-                <div class="text logo-text">
+                <div class="text header-text">
                     <span class="title">Health_up</span>
                     <span class="description">Mejore su salud</span>
                 </div>
@@ -30,39 +33,34 @@
             <div class="menu">
                 <ul class="menu-links">
                     <li class="nav-link">
-                            <a href="Perfil.php">
-                                <i class='bx bx-user icons'></i>
-                                <span class="text nav-text">Perfil</span>
-                            </a>
-                        <!--<span class="tooltip>Perfil</span>-->
+                        <a href="perfil.php">
+                            <i class='bx bx-user icons'></i>
+                            <span class="text nav-text">Perfil</span>
+                        </a>
                     </li>
                     <li class="nav-link">
                         <a href="home.php">
                             <i class='bx bx-home-alt-2 icons'></i>
                             <span class="text nav-text">Inicio</span>
                         </a>
-                        <!--<span class="tooltip">Inicio</span>-->
                     </li>
                     <li class="nav-link">
                         <a href="fisico.php">
                             <i class='bx bx-walk icons'></i>
                             <span class="text nav-text">Fisico</span>
                         </a>
-                        <!--<span class="tooltip">Fisico</span>-->
                     </li>
                     <li class="nav-link">
                         <a href="socioemocional.php">
                             <i class='bx bx-happy icons'></i>
                             <span class="text nav-text">Socioemocional</span>
                         </a>
-                        <!--<span class="tooltip">Socioemocional</span>-->
                     </li>
                     <li class="nav-link">
                         <a href="encuesta.php">
                             <i class='bx bx-pie-chart-alt-2 icons'></i>
                             <span class="text nav-text">Encuesta</span>
                         </a>
-                        <!--<span class="tooltip">Encuesta</span>-->
                     </li>
                 </ul>
             </div>
@@ -88,7 +86,7 @@
     </nav>
     <section class="home">
         <?php
-        require './views/usuario.php';
+        require './views/ira.php';
         ?>
     </section>
     <script src="js/sidebar.js"></script>

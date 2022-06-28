@@ -3,12 +3,12 @@ require("config/config.php");
 
 		try{
 			if(isset($_POST['Correo']) && !empty($_POST['Correo'])){
-                $pass = substr( md5(microtime()), 1, 10);
+                $Constraseña = substr( md5(microtime()), 1, 10);
                 $Correo = $_POST['Correo'];
                 
                
                 
-                $sql = "UPDATE persona SET Correo='$Correo' WHERE Contraseña='$pass'";
+                $sql = "UPDATE persona SET Correo='$Correo' WHERE Contraseña='$Contraseña'";
 
                 if ($con->query($sql) === TRUE) {
                     echo "usuario modificado correctamente ";
@@ -17,9 +17,9 @@ require("config/config.php");
                 }
                 
                 $to = $_POST['Correo'];//"destinatario@email.com";
-                $from = "From: " . "gokuelduro123@gmail.com" ;
+                $from = "From: " . "healthup98@gmail.com" ;
                 $subject = "Recordar contraseña";
-                $message = "El sistema le asigno la siguiente clave " . $pass;
+                $message = "El sistema le asigno la siguiente clave " . $Contraseña;
 
                 mail($to,$subject,$message,$from);
                 echo 'Correo enviado satisfactoriamente a ' . $_POST['Correo'];

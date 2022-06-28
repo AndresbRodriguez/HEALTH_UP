@@ -34,7 +34,7 @@
                 <input type="password" name="Contraseña" id="Contraseña" required><span class="barra"></span>
                 <label for="">Contraseña</label>
             </div>
-            <button type="submit" name="Registrarse" class="sign-up">registrarme</button>
+            <button type="submit" class="sign-up">registrarme</button>
             <a href="signin.php">tengo una cuenta</a>
         </div>
     </form>

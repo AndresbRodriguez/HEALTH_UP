@@ -86,6 +86,23 @@
                 </div>
             </div>
     </section>
+    <footer id="contacto">
+        <div class="contenedor footer-content">
+            <div class="contact-us">
+                <h2 class="brand">Healt up</h2>
+                <p>somos expertos es crear tu mejor version</p>
+            </div>
+            <div class="social-media">
+                <a href="https://www.facebook.com/Helath_up-103442115724138?_rdc=1&_rdr" class="social-media-icon">
+                    <i class='bx bxl-facebook'></i>
+                </a>
+                <a href="https://www.instagram.com/healthup_oficial/" class="social-media-icon">
+                    <i class='bx bxl-instagram'></i>
+                </a>
+            </div>
+        </div>
+        <div class="line"></div>
+    </footer>
 </body>
 
 </html>

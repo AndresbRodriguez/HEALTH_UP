@@ -14,7 +14,7 @@
         <figure>
             <img src="./CSS/IMG/public/ira.jpg" alt="">
             <div class="capa">
-                <a href="chest.html">
+                <a href="ira.php">
                     <h3 class="text">Rutina control ira</h3>
                 </a>
             </div>

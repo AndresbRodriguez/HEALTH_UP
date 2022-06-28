@@ -1,23 +1,3 @@
-<?php
-session_start();
-require './config/config.php';
-
-
-if (isset($_GET['ID_P'])) {
-    $id = $_GET['ID_P'];
-    $usuario = "SELECT * FROM persona WHERE ID_P=$id";
-    $user = mysqli_query($con, $usuario);
-    if (mysqli_num_rows($user) == 1) {
-        $perfil = mysqli_fetch_array($user);
-        $Nombre = $perfil['Nombres'];
-        $Apellido = $perfil['Apellidos'];
-        $Fecha_nacimiento = $perfil['Fecha_nacimiento'];
-        $Correo = $perfil['Correo'];
-        $Contraseña = $perfil['Contraseña'];
-    }
-}
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -30,7 +10,7 @@ if (isset($_GET['ID_P'])) {
 </head>
 
 <body>
-    <form action="" method="POST">
+    <form action="usuario.php" method="POST">
         <div class="profile-img p-4">
             <img class="img-user" src="CSS/IMG/public/user.jpg" alt="">
         </div>
@@ -38,7 +18,7 @@ if (isset($_GET['ID_P'])) {
             <h1 class="text"><?php ?></h1>
             <div class="grupo">
                 <label class="text" for="">Nombres</label>
-                <input class="text" type="text" name="Nombres" value="<?php ?>">
+                <input class="text" type="text" name="Nombres" value="<?php  ?>">
             </div>
             <div class="grupo">
                 <label class="text" for="">Apellidos</label>
@@ -61,7 +41,7 @@ if (isset($_GET['ID_P'])) {
                 <input class="text" type="password" name="Contraseña" value="<?php ?>">
             </div>
             <input type="submit" name="actualizar" class="actualizar" value="Actualizar">
-            <input type="submit" name="eliminar" class="delete" value="Eliminar">
+            <a class="delete" href="delete.php">Eliminar</a>
         </div>
     </form>
 </body>
