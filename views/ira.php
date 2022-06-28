@@ -61,16 +61,16 @@
                             </div>
                             <div class="checklist-servicio">
                                 <div class="service">
-                                    <a href="fisica.html">
-                                        <h1 class="subtitulo text">Fin de la rutina</h1>
+                                    <a href="socioemocional.php">
+                                        <h1 class="subtitulo">Fin de la rutina</h1>
                                     </a>
                                 </div>
                             </div>
                             <footer id="contacto">
                                 <div class="contenedor footer-content">
                                     <div class="contact-us">
-                                        <h2 class="brand text">Healt up</h2>
-                                        <p class="text">somos expertos es crear tu mejor version</p>
+                                        <h2 class="brand">Healt up</h2>
+                                        <p>somos expertos es crear tu mejor version</p>
                                     </div>
                                     <div class="social-media">
                                         <a href="https://www.facebook.com/Helath_up-103442115724138?_rdc=1&_rdr" class="social-media-icon">

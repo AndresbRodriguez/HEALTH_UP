@@ -12,8 +12,11 @@ body {
     text-align: center;
     font-weight: 300;
     color: #9f8ad0;
-
     font-size: 40px;
+}
+
+a h1 .subtitulo{
+    text-decoration: none;
 }
 
 .contenedor-servicio {
