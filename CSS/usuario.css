@@ -1,0 +1,53 @@
+.img-user {
+    border-radius: 50%;
+    height: 100px;
+}
+
+form {
+    background: transparent;
+    border: none;
+    padding: 40px 5px;
+    border-radius: 10px;
+
+}
+
+input{
+    background: none;
+    color: #49454567;
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 50%;
+    border: none;
+    border-bottom: 1px #49454567;
+
+}
+
+.actualizar {
+    background: rgb(51, 100, 206);
+    color: #fff;
+    border-radius: 11px;
+    cursor: pointer;
+    height: 40px;
+    font-size: 16px;
+    margin: 10px auto;
+    width: 150px;
+    border: none;
+}
+
+.actualizar:hover{
+    background: rgb(16, 78, 211);
+}
+
+.delete{
+    background: red;
+    color: #fff;
+    border-radius: 11px;
+    cursor: pointer;
+    height: 40px;
+    font-size: 16px;
+    margin: 10px auto;
+    font-size: 16px;
+    width: 150px;
+    border: none;
+}
