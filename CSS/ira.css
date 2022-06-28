@@ -1,128 +1,150 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body{
-    font-family: 'Open Sans', sans-serif;
-  }
-  .subtitulo{
-    text-align: center;
-    font-weight: 300;
-    color: #9f8ad0;
-  
-    font-size: 40px;
-  }
-  .contenedor-servicio{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-  .contenedor-servicio-img{
-    width: 60%;
-  }
-  .checklist-servicio{
-    width: 45%;
-  }
-  .service{
-    margin-bottom: 30px;
-  }
-  .n-service{
-    margin-bottom: 7px;
-    color: #9f8ad0;
-  }
-  .number{
-    display: inline-block;
-    background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
-    width: 30px;
-    height: 30px;
-    color: #fff;
-    text-align: center;
-    border-radius: 50%;
-    font-weight: 700;
-    line-height: 30px;
-    margin-right: 5px;
-  }
-  footer{
-    background: #9f8ad0;
-    padding-bottom: 0.1px;
-  
-  }
-  .footer-content{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;
-    padding-top: 60px;
-    padding-bottom: 40px;
-  }
-  .contact-us{
-    width: 30%;
-    color: #fff;
-  }
-  .brand{
-    font-weight: 500;
-    font-size: 40px;
-  }
-  .brand+p{
-    font-weight: 500;
-  }
-  .social-media{
-    width: 50%;
-    display: flex;
-    justify-content: flex-end;
-  }
-  .social-media-icon{
-    display: inline-block;
-    margin-left: 20px;
-    width: 60px;
-    height: 60px;
-    background-color:1px solid #fff;
-    border-radius: 50%;
-    align-items: center;
-    color: #fff;
-  }
-  .social-media-icon i{
-    font-size: 30px;
-    line-height: 60px;
-  }
-  .line{
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-    height: 2px;
-    background: #fff;
-    margin-bottom: 60px;
-  }
-  @media screen and (max-width: 800px){
-  
-    .contenedor-servicio-img{
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.subtitulo {
+  text-align: center;
+  font-weight: 300;
+  color: #9f8ad0;
+
+  font-size: 40px;
+}
+
+.contenedor-servicio {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.contenedor-servicio-img {
+  width: 60%;
+}
+
+.checklist-servicio {
+  width: 45%;
+}
+
+.service {
+  margin-bottom: 30px;
+}
+
+.n-service {
+  margin-bottom: 7px;
+  color: #9f8ad0;
+}
+
+.number {
+  display: inline-block;
+  background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+  width: 30px;
+  height: 30px;
+  color: #fff;
+  text-align: center;
+  border-radius: 50%;
+  font-weight: 700;
+  line-height: 30px;
+  margin-right: 5px;
+}
+
+footer {
+  background: #9f8ad0;
+  padding-bottom: 0.1px;
+
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+
+.contact-us {
+  width: 30%;
+  color: #fff;
+}
+
+.brand {
+  font-weight: 500;
+  font-size: 40px;
+}
+
+.brand+p {
+  font-weight: 500;
+}
+
+.social-media {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.social-media-icon {
+  display: inline-block;
+  margin-left: 20px;
+  width: 60px;
+  height: 60px;
+  background-color: 1px solid #fff;
+  border-radius: 50%;
+  align-items: center;
+  color: #fff;
+}
+
+.social-media-icon i {
+  font-size: 30px;
+  line-height: 60px;
+}
+
+.line {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 2px;
+  background: #fff;
+  margin-bottom: 60px;
+}
+
+@media screen and (max-width: 800px) {
+
+  .contenedor-servicio-img {
       width: 80%;
       margin-bottom: 40px;
-    }
-    .checklist-servicio{
+  }
+
+  .checklist-servicio {
       width: 80%;
-    }
-    .service{
+  }
+
+  .service {
       margin-bottom: 30px;
-    }
-    .footer-content{
+  }
+
+  .footer-content {
       width: 80%;
       justify-content: center;
-    }
-    .social-media{
+  }
+
+  .social-media {
       width: 80%;
       justify-content: space-evenly;
-    }
-    .social-media-i{
+  }
+
+  .social-media-i {
       margin-left: 0;
-    }
-    .contact-us{
+  }
+
+  .contact-us {
       text-align: center;
       width: 80%;
       margin-bottom: 40px;
-    }
-    }
-  
+  }
+}
