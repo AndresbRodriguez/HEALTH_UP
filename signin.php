@@ -13,7 +13,7 @@
 </head>
 
 <body>
-  <form action="signin.php" method="POST" id="form">
+  <form action="validacion.php" method="POST" id="form">
     <div class="form">
       <h1>Sign up</h1>
       <div class="grupo">
