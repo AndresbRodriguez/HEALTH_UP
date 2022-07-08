@@ -10,9 +10,16 @@ if (isset($_POST['Registrarse'])) {
     $Contraseña = trim(md5($_POST['Contraseña']));
 
     $consulta = "INSERT INTO persona(Nombres, Apellidos, Tipo_Usuario, Fecha_nacimiento, Correo, Contraseña) VALUES ('$Nombres','$Apellidos','Usuario','$Fecha_nacimiento','$Correo','$Contraseña')";
+
+    $VerCorrreo = mysqli_query($con, "SELECT*FROM persona WHERE Correo='$Correo'");
+
+    if (mysqli_num_rows($VerCorrreo) > 0) {
+      echo '<h3>Ya existe un usuario, intente nuevamente o verifique si ya tiene cuenta</h3>';
+      exit();
+    }
+
     $resultado = mysqli_query($con, $consulta);
     if ($resultado) {
-      header('Location: index.php')
 ?>
       <h3 class="ok">Se ha inscripto correctamente</h3>
     <?php

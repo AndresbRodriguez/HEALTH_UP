@@ -4,34 +4,27 @@ const body = document.querySelector("body"),
       modeSwitch = body.querySelector(".toggle-switch");
       modeText = body.querySelector(".mode-text");
 
-let getMode = localStorage.getItem("modo");
+let getMode = localStorage.getItem("mode");
 if (getMode && getMode === "dark") {
     body.classList.toggle("dark");
-}
-
-//let getStatus = localStorage.getItem("status");
-//if (getStatus && getStatus === "close") {
-//    sidebar.classList.toggle("close");
-//}
+}      
 
 toggle.addEventListener("click", () => {
     sidebar.classList.toggle("close");
-    /*if (sidebar.classList.toggle("close")) {
-        modeText.innerText = "cerrado";
-        localStorage.setItem("modo", "cerrado")
+    if (sidebar.classList.contains("close")) {
+        localStorage.setItem("status", "close");
     } else {
-        modeText.innerText = "abierto";
-        localStorage.setItem("modo", "abierto")
-    }*/
+        localStorage.setItem("status", "open");
+    }
 });
 
 modeSwitch.addEventListener("click", () =>{
     body.classList.toggle("dark");
     if (body.classList.contains("dark")) {
         modeText.innerText = "modo claro";
-        localStorage.setItem("modo", "oscuro");
+        localStorage.setItem("mode", "dark");
     } else {
         modeText.innerText = "modo oscuro";
-        localStorage.setItem("modo", "claro");
+        localStorage.setItem("mode", "light");
     }
 });

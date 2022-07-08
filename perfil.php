@@ -1,3 +1,22 @@
+<?php
+require './config/config.php';
+session_start();
+
+if (!isset($_SESSION['Correo'])) {
+    header("location:signin.php");
+    session_destroy();
+    die();
+}
+
+if (isset($_SESSION['Correo'])) {
+    $user = mysqli_query($con, "SELECT*FROM persona WHERE Correo='$_SESSION[Correo]'");
+
+    while ($row = mysqli_fetch_assoc($user)) {
+        $Nombres = $row['Nombres'];
+    }
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,7 +28,7 @@
     <link rel="icon" href="CSS/IMG/logo-health_up.png">
     <link rel="stylesheet" href="CSS/usuario.css">
     <link rel="stylesheet" href="CSS/sidebar.css">
-    <title>Perfil | Health_up</title>
+    <title>Perfil | <?php echo $Nombres; ?></title>
 </head>
 
 <body>
@@ -30,10 +49,10 @@
             <div class="menu">
                 <ul class="menu-links">
                     <li class="nav-link">
-                            <a href="Perfil.php">
-                                <i class='bx bx-user icons'></i>
-                                <span class="text nav-text">Perfil</span>
-                            </a>
+                        <a href="Perfil.php?Id_user=<?php echo $_SESSION['Correo'] ?>">
+                            <i class='bx bx-user icons'></i>
+                            <span class="text nav-text">Perfil</span>
+                        </a>
                         <!--<span class="tooltip>Perfil</span>-->
                     </li>
                     <li class="nav-link">

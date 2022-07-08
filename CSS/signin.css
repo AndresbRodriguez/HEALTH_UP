@@ -96,7 +96,28 @@ input:focus~.barra::before {
     width: 100%;
 }
 
+.form i {
+    position: absolute;
+    top: 50%;
+    right: 3%;
+    transform: translateY(-50%);
+    color: var(--colorTextos);
+    font-size: 23px;
+    transition: all 0.2s ease;
+}
+
+.form i.icon {
+    left: 0;
+}
+
+.form i.showHidePw {
+    right: 0;
+    cursor: pointer;
+    padding: 10px;
+}
+
 a{
+    position: relative;
     color: blueviolet;
     text-decoration: none;
     text-align: center;

@@ -1,3 +1,11 @@
+<?php
+session_start();
+
+if (isset($_SESSION['Correo'])) {
+    header("location:home.php");
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,11 +15,12 @@
     <title>Sign up</title>
     <link rel="stylesheet" href="CSS/signin.css">
     <link rel="icon" href="CSS/IMG/logo-health_up.png">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <form action="registrar.php" method="POST" id="form">
+    <form action="" method="POST" id="form">
         <div class="form">
             <h1>Sign up</h1>
             <div class="grupo">
@@ -33,11 +42,15 @@
             <div class="grupo">
                 <input type="password" name="Contraseña" id="Contraseña" required><span class="barra"></span>
                 <label for="">Contraseña</label>
+                <i class="uil uil-eye-slash"></i>
             </div>
-            <button type="submit" class="sign-up">registrarme</button>
+            <button type="submit" name="Registrarse" class="sign-up">registrarme</button>
             <a href="signin.php">tengo una cuenta</a>
         </div>
     </form>
+    <?php
+    require 'registrar.php';
+    ?>
 </body>
 
 </html>
